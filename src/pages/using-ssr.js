@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Header from "../components/header"
 
 const UsingSSR = ({ serverData }) => {
   return (
     <Layout>
+      <Header siteTitle={`Title`} />
       <Seo title="Using SSR" />
       <h1>SSR page</h1>
       <img

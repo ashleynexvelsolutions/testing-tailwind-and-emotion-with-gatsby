@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 import tw, { styled, css } from 'twin.macro'
-import { theme } from './layout'
+
 
 const HeaderInnerContainer = styled.div([
   css`
@@ -9,10 +9,10 @@ const HeaderInnerContainer = styled.div([
     my-0 
     mx-auto
     bg-yellow-300
+    text-primary
     `}
     max-width: 1100px;
     padding: 1.45rem 1.0875rem;
-    color: ${theme.colors.primary};
   `
 ])
 

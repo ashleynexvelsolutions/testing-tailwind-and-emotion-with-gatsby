@@ -20,19 +20,11 @@ export const theme = {
 }
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+
 
   return (
     <ThemeProvider theme={theme}>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      
       <div
         style={{
           margin: `0 auto`,
